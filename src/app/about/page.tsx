@@ -86,7 +86,7 @@ export default function AboutPage() {
                 About me
               </h1>
               <p className="text-xl md:text-2xl text-zinc-400 leading-relaxed">
-                Independent Validator & Fullstack Developer from Bogor, Indonesia. Operating as <span className="font-semibold text-white">Derana</span>, I&apos;ve contributed to 30+ blockchain networks and built Web3 applications focused on permanence and verification.
+                Independent Validator & Web3 Developer from Bogor, Indonesia. Operating as <span className="font-semibold text-white">Derana</span>, I&apos;ve contributed to 30+ blockchain networks and built Web3 applications focused on permanence and verification.
               </p>
             </div>
           </div>

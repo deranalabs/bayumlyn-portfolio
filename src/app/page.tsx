@@ -46,7 +46,7 @@ export default function HomePage() {
             </h1>
             
             <p className="text-lg md:text-xl text-zinc-400 leading-relaxed">
-              Hi, I&apos;m <span className="font-semibold text-white">Bayu Mulyana</span> — an Independent Validator &amp; Fullstack Developer from Bogor, Indonesia. Operating as <span className="font-semibold text-white">Derana</span>, I build blockchain infrastructure and Web3 applications focused on permanence and verification.
+              Hi, I&apos;m <span className="font-semibold text-white">Bayu Mulyana</span> — an Independent Validator &amp; Web3 Developer from Bogor, Indonesia. Operating as <span className="font-semibold text-white">Derana</span>, I build blockchain infrastructure and Web3 applications focused on permanence and verification.
             </p>
             
             <div className="flex flex-wrap gap-4">
