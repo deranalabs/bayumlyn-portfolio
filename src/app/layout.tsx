@@ -8,9 +8,9 @@ import { Footer } from '@/components/layout/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Bayu Mulyana - Web3 Engineer & Frontend Developer',
-  description: 'Web3 Engineer and Frontend Developer based in Bogor, Indonesia. Specializing in blockchain development, smart contracts, and modern web applications.',
-  keywords: ['Web3', 'Blockchain', 'Frontend Developer', 'Smart Contracts', 'React', 'Next.js', 'Solidity', 'Bayu Mulyana'],
+  title: 'Bayu Mulyana - Independent Validator & Web3 Developer',
+  description: 'Independent Blockchain Validator and Web3 Developer operating as Derana. Running validator infrastructure across 30+ networks, building Web3 applications, and providing professional KYC services. Based in Bogor, Indonesia.',
+  keywords: ['Web3', 'Blockchain Validator', 'Web3 Developer', 'Validator Operations', 'Blockchain Infrastructure', 'Node Operator', 'KYC Services', 'Derana', 'Bayu Mulyana', 'Indonesia'],
 };
 
 export default function RootLayout({
