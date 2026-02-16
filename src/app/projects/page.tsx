@@ -248,7 +248,7 @@ export default function ProjectsPage() {
           <div className="border-t border-zinc-800/40 pt-12 mt-12 text-center space-y-4">
             <h3 className="text-xl font-semibold text-white">Ready to build working products?</h3>
             <p className="text-zinc-400">
-              Let&apos;s discuss your next Web3 project — from smart contracts to complete deployment with practical development approach
+              Let{'&apos;'}s discuss your next Web3 project — from smart contracts to complete deployment with practical development approach
             </p>
             <div className="flex gap-4 justify-center">
               <Link href="https://github.com/deranalabs" target="_blank" rel="noopener noreferrer">

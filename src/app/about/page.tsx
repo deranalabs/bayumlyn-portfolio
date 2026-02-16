@@ -121,7 +121,7 @@ export default function AboutPage() {
             <div className="space-y-6">
               <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">About</p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-                Hi, I&apos;m Bayu Mulyana
+                Hi, I{'&apos;'}m Bayu Mulyana
               </h1>
               <p className="text-lg md:text-xl text-zinc-300 leading-relaxed max-w-3xl">
               Web3 Product Developer who builds end-to-end solutions with intuitive problem-solving approach. I focus on delivering working products from concept to deployment across Web2 and Web3 ecosystems, using practical development methods rather than theoretical perfection.

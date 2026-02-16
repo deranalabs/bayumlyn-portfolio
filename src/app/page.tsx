@@ -39,11 +39,11 @@ export default function HomePage() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">
                 Web3 Products
               </span>{' '}
-              &amp; Working Solutions
+              &{' '}Working Solutions
             </h1>
             
             <p className="text-base sm:text-lg md:text-xl text-zinc-400 leading-relaxed">
-              Hi, I&apos;m <span className="font-semibold text-white">Bayu Mulyana</span> — a Web3 Product Developer who builds end-to-end solutions with intuitive problem-solving. I focus on delivering working products from concept to deployment across Web2 and Web3 ecosystems.
+              Hi, I{'&apos;'}m <span className="font-semibold text-white">Bayu Mulyana</span> — a Web3 Product Developer who builds end-to-end solutions with intuitive problem-solving. I focus on delivering working products from concept to deployment across Web2 and Web3 ecosystems.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -334,7 +334,7 @@ export default function HomePage() {
                 Ready to build working products?
               </h2>
               <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
-                Let&apos;s discuss your project requirements and build practical solutions together. I focus on delivering working products from concept to deployment.
+                Let{'&apos;'}s discuss your project requirements and build practical solutions together. I focus on delivering working products from concept to deployment.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

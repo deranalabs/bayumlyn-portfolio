@@ -26,7 +26,7 @@ export default function ContactPage() {
           <div className="space-y-6">
             <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">Contact</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-              Let&apos;s Connect
+              Let{'&apos;'}s Connect
             </h1>
             <p className="text-lg md:text-xl text-zinc-400 max-w-3xl leading-relaxed">
               Web3 Product Developer who builds complete solutions with practical approach. Reach out for collaborations, product development, or end-to-end Web3 projects from concept to deployment.
