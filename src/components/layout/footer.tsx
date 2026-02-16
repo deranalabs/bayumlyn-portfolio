@@ -1,17 +1,19 @@
-import { Github, Linkedin, Instagram, Send, MessageCircle } from 'lucide-react';
+import { Github, Linkedin, Instagram, Send, MessageCircle, Twitter, Globe, Users, Briefcase } from 'lucide-react';
 
 export function Footer() {
   const socialLinks = [
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/bayumlyn/', icon: Linkedin },
     { name: 'GitHub', href: 'https://github.com/deranalabs', icon: Github },
-    { name: 'X (Twitter)', href: 'https://x.com/bayumlynn', icon: MessageCircle },
-    { name: 'Instagram', href: 'https://instagram.com/bayumlyn', icon: Instagram },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/bayumlyn/', icon: Linkedin },
+    { name: 'X', href: 'https://x.com/bayumlynn', icon: Twitter },
     { name: 'Telegram', href: 'https://t.me/deranaz', icon: Send },
+    { name: 'Link3', href: 'https://link3.to/bayumlyn', icon: Globe },
+    { name: 'Upwork', href: 'https://www.upwork.com/freelancers/bayum8', icon: Briefcase },
+    { name: 'Farcaster', href: 'https://farcaster.xyz/derana', icon: Users },
   ];
 
   return (
-    <footer className="border-t border-blue-900/30 bg-gradient-to-b from-[#0a0e1a] to-[#0d1117]">
-      <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
+    <footer className="border-t border-cyan-900/30 bg-gradient-to-b from-[#0a0f1d] to-[#0b1220]">
+      <div className="container mx-auto max-w-5xl px-4 md:px-6 py-12 md:py-16">
         <div className="flex flex-col gap-8">
           {/* Social Links */}
           <div className="flex flex-col gap-4">
@@ -33,34 +35,6 @@ export function Footer() {
                   </a>
                 );
               })}
-            </div>
-            
-            {/* Additional Links */}
-            <div className="flex flex-wrap gap-4 text-sm">
-              <a 
-                href="https://link3.to/bayumlyn" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-zinc-400 hover:text-white transition-colors"
-              >
-                Link3
-              </a>
-              <a 
-                href="https://medium.com/@bayumlyn" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-zinc-400 hover:text-white transition-colors"
-              >
-                Medium
-              </a>
-              <a 
-                href="https://warpcast.com/derana" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-zinc-400 hover:text-white transition-colors"
-              >
-                Warpcast
-              </a>
             </div>
           </div>
           

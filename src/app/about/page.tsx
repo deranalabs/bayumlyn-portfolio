@@ -1,76 +1,114 @@
 import { IdentityCard } from '@/components/identity/identity-card';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Blocks, Zap, Shield, Globe, Code, Sparkles, Wallet, Download, Calendar } from 'lucide-react';
-import { SkillBar } from '@/components/skills/skill-bar';
 import { Timeline } from '@/components/experience/timeline';
 import { ScrollFade } from '@/components/ui/scroll-fade';
 import Image from 'next/image';
 
-const skills = [
-  { name: 'Docker & CLI Scripting', level: 95, category: 'Infrastructure' },
-  { name: 'Validator Operations', level: 93, category: 'Blockchain' },
-  { name: 'React / Vite / Next.js', level: 90, category: 'Frontend' },
-  { name: 'Node.js & PostgreSQL', level: 85, category: 'Backend' },
-  { name: 'Grafana & Prometheus', level: 90, category: 'Monitoring' },
-  { name: 'Blockchain Testnet Participation', level: 95, category: 'Web3' },
+const skillTags = [
+  'Product Development',
+  'Smart Contracts',
+  'Web3 Integration',
+  'Backend Systems',
+  'API Design',
+  'PostgreSQL',
+  'Node.js',
+  'Next.js',
+  'Practical Problem Solving',
+  'Rapid Prototyping',
+  'Move (Sui)',
+  'Solidity (Base/EVM)',
+  'JWT Authentication',
+  'Database Design',
+  'Wallet Integration',
+];
+
+const techStacks = [
+  {
+    title: 'Web3 & Smart Contracts',
+    items: ['Solidity', 'Move', 'Wagmi', 'RainbowKit', 'WalletConnect'],
+  },
+  {
+    title: 'Backend & Systems',
+    items: ['Node.js', 'PostgreSQL', 'APIs', 'JWT Auth', 'Linux Operations'],
+  },
+  {
+    title: 'Frontend & Tools',
+    items: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+  },
+];
+
+const selectedProjects = [
+  {
+    name: 'Catalyst (Sui Network)',
+    description: '2nd Place Winner at Sui Indonesia Hackathon 2025. Built a fully functional NFT Launchpad protocol on MoveVM.',
+  },
+  {
+    name: 'Irys Proofboard',
+    description: 'Decentralized Proof-of-Existence platform using Irys SDK & SHA-256 hashing with gamified user achievements.',
+  },
+  {
+    name: 'Sukatani (Base Sepolia)',
+    description: 'Web3 Farming RPG featuring tradable Land NFTs, on-chain inventory, and a "Play, Harvest, Own" economic loop.',
+  },
+  {
+    name: 'Kept (Base Ecosystem)',
+    description: 'Accountability protocol where users stake tokens to back daily commitments, introducing financial incentives for habit building.',
+  },
+  {
+    name: 'ReplayCaster',
+    description: 'Cinematic Year-in-Review experience for Farcaster users, visualizing social graph activity and engagement metrics.',
+  },
 ];
 
 const experience = [
   {
-    year: '2024-Now',
-    title: 'Founder & Fullstack Developer',
-    company: 'Proofboard',
-    description: 'Building Web3 application on Irys Datachain focused on verifiable storage and permanent proofs. Developing full-stack architecture with React, Vite, and Irys SDK.',
-    tags: ['React', 'Vite', 'Irys SDK', 'Web3'],
+    year: '2024-Present',
+    title: 'Web3 Product Developer',
+    company: 'Freelance / Derana Labs',
+    description: 'Building complete Web3 products with practical development approach. Focus on delivering working solutions from smart contracts to user interfaces across multiple ecosystems.',
+    tags: ['Product Development', 'Web3', 'Smart Contracts'],
   },
   {
-    year: '2021-Now',
-    title: 'Independent Validator & Node Operator',
-    company: 'Self-Employed (Derana)',
-    description: 'Operating infrastructure for 30+ blockchain networks including Drosera, Nibiru, Subsquid, BonusBlock, Namada, Over Protocol. Expertise in Docker, monitoring, and testnet participation.',
-    tags: ['Validator', 'Docker', 'Monitoring', 'DevOps'],
+    year: '2024-Present',
+    title: 'Node Validator Operator',
+    company: 'Independent',
+    description: 'Active operator running validator nodes on high-throughput testnets, including Gonka, with focus on reliability and practical monitoring solutions.',
+    tags: ['Validator Ops', 'Infrastructure', 'Linux'],
   },
   {
-    year: '2021-2025',
-    title: 'KYC Analyst',
-    company: 'CoinList (Freelance)',
-    description: 'Provided global KYC support for token sales and crypto exchange. Processed thousands of orders with international team collaboration.',
-    tags: ['KYC', 'Compliance', 'AML', 'Remote'],
+    year: '2025-Present',
+    title: 'Move Ecosystem Contributor',
+    company: 'Cedra Labs',
+    description: 'Contributing to Move-based event indexing architecture and tooling through cedra-cli research and practical development.',
+    tags: ['MoveVM', 'Indexing', 'Tooling'],
   },
 ];
 
 export default function AboutPage() {
   return (
     <div className="relative min-h-screen text-white overflow-hidden">
-      {/* Premium Dark Blue Background System */}
-      <div className="fixed inset-0 bg-gradient-to-b from-[#0a0e1a] via-[#0d1117] to-[#0a0e1a] -z-50"></div>
-      
-      {/* Subtle Blue Accent Layer */}
+      <div className="fixed inset-0 bg-gradient-to-b from-[#0a0f1d] via-[#0b1220] to-[#0a0f1d] -z-50"></div>
+
       <div className="fixed inset-0 -z-40 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 via-transparent to-blue-950/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-cyan-950/10 via-transparent to-blue-950/10"></div>
         <div 
           className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] opacity-20 blur-3xl"
           style={{
-            background: 'radial-gradient(ellipse, rgba(30, 58, 138, 0.15), transparent 70%)'
+            background: 'radial-gradient(ellipse, rgba(34, 211, 238, 0.12), transparent 70%)'
           }}
         ></div>
       </div>
 
-      <div className="container mx-auto max-w-6xl px-4 md:px-6 py-20 md:py-32">
-        <div className="space-y-24">
-          {/* Header with Profile Photo */}
+      <div className="container mx-auto max-w-5xl px-4 md:px-6 py-16 md:py-24">
+        <div className="space-y-16">
           <ScrollFade>
-          <div className="grid lg:grid-cols-[280px_1fr] gap-12 items-start">
-            {/* Profile Photo */}
+          <div className="grid lg:grid-cols-[260px_1fr] gap-10 items-start">
             <div className="flex justify-center lg:justify-start">
               <div className="relative w-64 h-64 lg:w-full lg:h-auto lg:aspect-square">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
-                <div className="relative rounded-full overflow-hidden border-4 border-zinc-800 shadow-2xl shadow-blue-950/50">
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
+                <div className="relative rounded-full overflow-hidden border-4 border-zinc-800 shadow-2xl shadow-cyan-950/40">
                   <Image
                     src="/images/bayuprofile.png"
-                    alt="Bayu Mulyana - Derana"
+                    alt="Bayu Mulyana"
                     width={400}
                     height={400}
                     className="w-full h-full object-cover"
@@ -80,84 +118,85 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Text Content */}
-            <div className="space-y-8">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1]">
-                About me
+            <div className="space-y-6">
+              <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">About</p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
+                Hi, I&apos;m Bayu Mulyana
               </h1>
-              <p className="text-xl md:text-2xl text-zinc-400 leading-relaxed">
-                Independent Validator & Web3 Developer from Bogor, Indonesia. Operating as <span className="font-semibold text-white">Derana</span>, I&apos;ve contributed to 30+ blockchain networks and built Web3 applications focused on permanence and verification.
+              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed max-w-3xl">
+              Web3 Product Developer who builds end-to-end solutions with intuitive problem-solving approach. I focus on delivering working products from concept to deployment across Web2 and Web3 ecosystems, using practical development methods rather than theoretical perfection.
+            </p>
+              <p className="text-zinc-400 leading-relaxed max-w-3xl">
+                🏆 <span className="text-white font-medium">2nd Place Winner at Sui Indonesia Hackathon 2025</span> – Built "Catalyst," a fully functional NFT Launchpad on MoveVM.
               </p>
             </div>
           </div>
           </ScrollFade>
 
-          {/* Identity Card */}
           <ScrollFade delay={100}>
           <IdentityCard />
           </ScrollFade>
 
-          {/* Tech Stack */}
           <ScrollFade delay={100}>
-          <div className="border-t border-zinc-800/30 pt-20 space-y-12">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+          <div className="border-t border-zinc-800/40 pt-12 space-y-8">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
               Tech stack
             </h2>
-            <div className="grid md:grid-cols-3 gap-x-12 gap-y-8">
-              <div className="space-y-3">
-                <h3 className="font-semibold text-white">Infrastructure</h3>
-                <div className="space-y-2 text-zinc-400">
-                  <div>Docker</div>
-                  <div>Ansible</div>
-                  <div>Ubuntu Server</div>
-                  <div>CLI Scripting</div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {techStacks.map((stack) => (
+                <div key={stack.title} className="space-y-3">
+                  <h3 className="font-semibold text-white">{stack.title}</h3>
+                  <div className="space-y-2 text-zinc-400">
+                    {stack.items.map((item) => (
+                      <div key={item}>{item}</div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-              <div className="space-y-3">
-                <h3 className="font-semibold text-white">Frontend & Backend</h3>
-                <div className="space-y-2 text-zinc-400">
-                  <div>React / Vite / Next.js</div>
-                  <div>Node.js / Express</div>
-                  <div>PostgreSQL / Supabase</div>
-                  <div>Tailwind CSS</div>
-                </div>
-              </div>
-              <div className="space-y-3">
-                <h3 className="font-semibold text-white">Monitoring & Web3</h3>
-                <div className="space-y-2 text-zinc-400">
-                  <div>Grafana / Prometheus</div>
-                  <div>wagmi / Irys SDK</div>
-                  <div>Cosmos SDK / EVM</div>
-                  <div>Railway / Vercel</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </ScrollFade>
-
-          {/* Skills */}
-          <ScrollFade delay={100}>
-          <div className="border-t border-zinc-800/30 pt-20 space-y-12">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-              Skills
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {skills.map((skill) => (
-                <SkillBar
-                  key={skill.name}
-                  name={skill.name}
-                  level={skill.level}
-                  category={skill.category}
-                />
               ))}
             </div>
           </div>
           </ScrollFade>
 
-          {/* Experience Timeline */}
           <ScrollFade delay={100}>
-          <div className="border-t border-zinc-800/30 pt-20 space-y-12">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+          <div className="border-t border-zinc-800/40 pt-12 space-y-8">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+              Skills
+            </h2>
+            <div className="flex flex-wrap gap-3">
+              {skillTags.map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-full border border-zinc-700/80 bg-zinc-900/60 px-4 py-2 text-sm text-zinc-200"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+          </ScrollFade>
+
+          <ScrollFade delay={100}>
+          <div className="border-t border-zinc-800/40 pt-12 space-y-8">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+              Selected projects
+            </h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              {selectedProjects.map((project) => (
+                <div
+                  key={project.name}
+                  className="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-5 space-y-2"
+                >
+                  <h3 className="text-lg font-semibold text-white">{project.name}</h3>
+                  <p className="text-zinc-400 leading-relaxed">{project.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          </ScrollFade>
+
+          <ScrollFade delay={100}>
+          <div className="border-t border-zinc-800/40 pt-12 space-y-8">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
               Experience
             </h2>
             <Timeline items={experience} />

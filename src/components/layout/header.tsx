@@ -18,8 +18,8 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-blue-900/30 bg-[#0a0e1a]/95 backdrop-blur-sm shadow-lg shadow-blue-950/20">
-      <div className="container mx-auto max-w-6xl px-4 md:px-6 flex h-16 items-center justify-between">
+    <header className="sticky top-0 z-50 w-full border-b border-cyan-900/30 bg-[#0a0f1d]/95 backdrop-blur-sm shadow-lg shadow-cyan-950/20">
+      <div className="container mx-auto max-w-5xl px-4 md:px-6 flex h-16 items-center justify-between">
         <Link href="/" className="font-bold text-xl text-white hover:text-zinc-400 transition-colors">
           Bayu Mulyana
         </Link>
@@ -62,8 +62,8 @@ export function Header() {
 
       {/* Mobile Navigation Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-zinc-800 bg-[#0a0e1a]/98 backdrop-blur-sm">
-          <nav className="container mx-auto max-w-6xl px-4 py-4 flex flex-col gap-2">
+        <div className="md:hidden border-t border-zinc-800 bg-[#0a0f1d]/98 backdrop-blur-sm">
+          <nav className="container mx-auto max-w-5xl px-4 py-4 flex flex-col gap-2">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -72,7 +72,7 @@ export function Header() {
                 className={cn(
                   'px-4 py-3 rounded-lg text-sm font-medium transition-colors',
                   pathname === item.href
-                    ? 'bg-blue-900/20 text-white'
+                    ? 'bg-cyan-900/20 text-white'
                     : 'text-zinc-400 hover:bg-zinc-800/50 hover:text-white'
                 )}
               >

@@ -9,323 +9,260 @@ import Image from 'next/image';
 export default function ProjectsPage() {
   return (
     <div className="relative min-h-screen text-white overflow-hidden">
-      {/* Premium Dark Blue Background System */}
-      <div className="fixed inset-0 bg-gradient-to-b from-[#0a0e1a] via-[#0d1117] to-[#0a0e1a] -z-50"></div>
-      
-      {/* Subtle Blue Accent Layer */}
+      <div className="fixed inset-0 bg-gradient-to-b from-[#0a0f1d] via-[#0b1220] to-[#0a0f1d] -z-50"></div>
+
       <div className="fixed inset-0 -z-40 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 via-transparent to-blue-950/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-cyan-950/10 via-transparent to-blue-950/10"></div>
         <div 
           className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] opacity-20 blur-3xl"
           style={{
-            background: 'radial-gradient(ellipse, rgba(30, 58, 138, 0.15), transparent 70%)'
+            background: 'radial-gradient(ellipse, rgba(34, 211, 238, 0.12), transparent 70%)'
           }}
         ></div>
       </div>
 
-      <div className="container mx-auto max-w-6xl px-4 md:px-6 py-20 md:py-32">
-        <div className="space-y-20">
+      <div className="container mx-auto max-w-5xl px-4 md:px-6 py-16 md:py-24">
+        <div className="space-y-16">
           {/* Header */}
           <ScrollFade>
-          <div className="space-y-8">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1]">
-              Projects
+          <div className="space-y-6">
+            <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">Portfolio</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
+              Recent Projects
             </h1>
-            <p className="text-xl md:text-2xl text-zinc-400 max-w-3xl leading-relaxed">
-              Validator operations and Web3 applications across 30+ blockchain networks — from Cosmos SDK to EVM and ZK ecosystems.
+            <p className="text-lg md:text-xl text-zinc-400 max-w-3xl leading-relaxed">
+              Working Web3 products built with practical development approach across multiple ecosystems. From smart contracts to complete applications, I focus on delivering solutions that actually work.
             </p>
           </div>
           </ScrollFade>
 
           {/* Web3 Applications */}
           <ScrollFade delay={100}>
-          <div className="space-y-8">
+          <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <Code className="h-6 w-6 text-white" />
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Web3 Applications
-              </h2>
+              <div className="h-px bg-zinc-800 flex-1"></div>
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-white">Web3 Applications</h2>
+              <div className="h-px bg-zinc-800 flex-1"></div>
             </div>
 
-            {/* Proofboard Card */}
-            <Card className="border-zinc-800 bg-zinc-900 hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-950/50 transition-all duration-300 overflow-hidden">
-              <div className="grid lg:grid-cols-2 gap-0">
-                {/* Image */}
-                <div className="relative h-[300px] lg:h-full bg-zinc-800/50">
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Catalyst Card */}
+              <Card className="border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:shadow-xl hover:shadow-cyan-950/20 transition-all duration-300 overflow-hidden group">
+                <div className="relative h-[200px] bg-zinc-800/30 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <Image 
-                    src="/images/irysproofboard.png"
-                    alt="Proofboard - Verifiable Dashboard"
+                    src="/images/projects/catalyst.png"
+                    alt="Catalyst - NFT Launchpad on Sui"
                     fill
                     className="object-cover object-center"
                     priority
                   />
-                </div>
-                
-                {/* Content */}
-                <CardContent className="p-8 space-y-6">
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-2">
-                      <Badge className="bg-green-900/30 text-green-300 border border-green-700">
-                        <CheckCircle2 className="h-3 w-3 mr-1" />
-                        Live
-                      </Badge>
-                      <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">React</Badge>
-                      <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">Vite</Badge>
-                    </div>
-                    
-                    <h3 className="text-3xl font-bold text-white">
-                      Proofboard
-                    </h3>
-                    
-                    <p className="text-zinc-400 leading-relaxed">
-                      Verifiable dashboard for permanent proofs on Irys Datachain. Built with React, Vite, and Irys SDK for proof verification and immutable storage tracking.
-                    </p>
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-yellow-900/30 text-yellow-300 border border-yellow-700">
+                      🏆 2nd Place
+                    </Badge>
                   </div>
-                  
-                  <div className="flex gap-4 pt-4">
-                    <a href="https://app.irysproofboard.xyz/" target="_blank" rel="noopener noreferrer">
-                      <Button className="bg-white text-gray-900 hover:bg-gray-100">
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        View Live App
+                </div>
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center gap-2">
+                    <Badge className="bg-green-900/30 text-green-300 border border-green-700">Live</Badge>
+                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">Move</Badge>
+                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">Sui</Badge>
+                  </div>
+                  <h3 className="text-xl font-bold text-white">Catalyst</h3>
+                  <p className="text-sm text-zinc-400 leading-relaxed">
+                    NFT Launchpad protocol built with practical approach during Sui Indonesia Hackathon 2025. Features batch minting, metadata management, and creator royalties - focused on working solutions.
+                  </p>
+                  <div className="flex gap-3 pt-2">
+                    <a href="https://catalyst-sui-kohl.vercel.app/" target="_blank" rel="noopener noreferrer">
+                       <Button size="sm" className="gap-2">
+                        <ExternalLink className="h-4 w-4" />
+                        Live App
                       </Button>
                     </a>
                   </div>
                 </CardContent>
-              </div>
-            </Card>
+              </Card>
+
+              {/* Proofboard Card */}
+              <Card className="border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:shadow-xl hover:shadow-cyan-950/20 transition-all duration-300 overflow-hidden group">
+                <div className="relative h-[200px] bg-zinc-800/30 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <video 
+                    src="/images/projects/proofboard.mp4"
+                    controls
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-green-900/30 text-green-300 border border-green-700">Irys Testnet</Badge>
+                  </div>
+                </div>
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center gap-2">
+                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">React</Badge>
+                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">Irys</Badge>
+                  </div>
+                  <h3 className="text-xl font-bold text-white">Irys Proofboard</h3>
+                  <p className="text-sm text-zinc-400 leading-relaxed">
+                    Decentralized Proof-of-Existence platform using Irys SDK & SHA-256 hashing with gamified user achievements and permanent storage.
+                  </p>
+                  <div className="flex gap-3 pt-2">
+                    <a href="https://app.irysproofboard.xyz/" target="_blank" rel="noopener noreferrer">
+                      <Button size="sm" className="gap-2">
+                        <ExternalLink className="h-4 w-4" />
+                        Live App
+                      </Button>
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Sukatani Card */}
+              <Card className="border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:shadow-xl hover:shadow-cyan-950/20 transition-all duration-300 overflow-hidden group">
+                <div className="relative h-[200px] bg-zinc-800/30 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <video 
+                    src="/images/projects/demo-sukatani.mp4"
+                    controls
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-blue-900/30 text-blue-300 border border-blue-700">Base App</Badge>
+                  </div>
+                </div>
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center gap-2">
+                    <Badge className="bg-blue-900/30 text-blue-300 border border-blue-700">Base Ecosystem</Badge>
+                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">P2E</Badge>
+                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">Solidity</Badge>
+                  </div>
+                  <h3 className="text-xl font-bold text-white">Sukatani</h3>
+                  <p className="text-sm text-zinc-400 leading-relaxed">
+                    Web3 Farming RPG featuring tradable Land NFTs, on-chain inventory, and a "Play, Harvest, Own" economic loop on Base Sepolia.
+                  </p>
+                  <div className="flex gap-3 pt-2">
+                    <a href="https://sukatani.fun" target="_blank" rel="noopener noreferrer">
+                      <Button size="sm" className="gap-2">
+                        <ExternalLink className="h-4 w-4" />
+                        Play
+                      </Button>
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* ReplayCaster Card */}
+              <Card className="border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:shadow-xl hover:shadow-cyan-950/20 transition-all duration-300 overflow-hidden group">
+                <div className="relative h-[200px] bg-zinc-800/30 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <video 
+                    src="/images/projects/replaycaster.mp4"
+                    controls
+                    className="w-full h-full object-contain bg-zinc-900"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-purple-900/30 text-purple-300 border border-purple-700">Farcaster</Badge>
+                  </div>
+                </div>
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center gap-2">
+                    <Badge className="bg-purple-900/30 text-purple-300 border border-purple-700">Farcaster</Badge>
+                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">Data Viz</Badge>
+                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">Social</Badge>
+                  </div>
+                  <h3 className="text-xl font-bold text-white">ReplayCaster</h3>
+                  <p className="text-sm text-zinc-400 leading-relaxed">
+                    Cinematic Year-in-Review experience for Farcaster users, visualizing social graph activity and engagement metrics.
+                  </p>
+                  <div className="flex gap-3 pt-2">
+                    <a href="https://replaycaster.vercel.app" target="_blank" rel="noopener noreferrer">
+                      <Button size="sm" className="gap-2">
+                        <ExternalLink className="h-4 w-4" />
+                        Live App
+                      </Button>
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
           </ScrollFade>
 
-          {/* Featured Validator Work */}
+          {/* Infrastructure & Protocol Work */}
           <ScrollFade delay={200}>
-          <div className="space-y-8">
+          <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <Shield className="h-6 w-6 text-white" />
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Featured Validator Work
-              </h2>
+              <div className="h-px bg-zinc-800 flex-1"></div>
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-white">Infrastructure & Protocol Work</h2>
+              <div className="h-px bg-zinc-800 flex-1"></div>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Drosera */}
-              <Card className="border-zinc-800 bg-zinc-900 hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-950/50 transition-all duration-300 overflow-hidden">
-                <div className="relative h-[200px] bg-zinc-800/50">
-                  <Image 
-                    src="/images/droserawork.png"
-                    alt="Drosera Network Operator"
-                    fill
-                    className="object-cover object-center"
-                    priority
-                  />
-                </div>
-                <CardContent className="p-6 space-y-4">
+            <div className="grid md:grid-cols-3 gap-4">
+              {/* Gonka Validator */}
+              <Card className="border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:shadow-lg hover:shadow-cyan-950/10 transition-all duration-300 p-5">
+                <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <Badge className="bg-blue-900/30 text-blue-300 border border-blue-700">
-                      <CheckCircle2 className="h-3 w-3 mr-1" />
-                      Completed
-                    </Badge>
-                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">Drosera</Badge>
+                    <Badge className="bg-green-900/30 text-green-300 border border-green-700 text-xs">Active</Badge>
+                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700 text-xs">Validator</Badge>
                   </div>
-                  <h3 className="text-xl font-bold text-white">
-                    Drosera Network Operator
-                  </h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed">
-                    Completed validator operations on Drosera testnet, providing secure infrastructure for decentralized monitoring and incident response. Successfully managed node operations with high uptime.
+                  <h3 className="text-lg font-semibold text-white">Gonka Testnet</h3>
+                  <p className="text-xs text-zinc-400 leading-relaxed">
+                    Active validator node operator on high-throughput testnet with focus on reliability and monitoring.
                   </p>
-                </CardContent>
+                </div>
               </Card>
 
-              {/* Stader Labs */}
-              <Card className="border-zinc-800 bg-zinc-900 hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-950/50 transition-all duration-300 overflow-hidden">
-                <div className="relative h-[200px] bg-zinc-800/50">
-                  <Image 
-                    src="/images/staderlabs.png"
-                    alt="Stader Labs Validator"
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-                <CardContent className="p-6 space-y-4">
+              {/* Cedra Labs */}
+              <Card className="border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:shadow-lg hover:shadow-cyan-950/10 transition-all duration-300 p-5">
+                <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <Badge className="bg-blue-900/30 text-blue-300 border border-blue-700">
-                      <CheckCircle2 className="h-3 w-3 mr-1" />
-                      Completed
-                    </Badge>
-                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">Stader Labs</Badge>
+                    <Badge className="bg-blue-900/30 text-blue-300 border border-blue-700 text-xs">Contributor</Badge>
+                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700 text-xs">MoveVM</Badge>
                   </div>
-                  <h3 className="text-xl font-bold text-white">
-                    Stader Labs Testnet Validator
-                  </h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed">
-                    Successfully completed validator participation in the Stader Labs testnet, maintained high uptime and supported staking, governance, and faucet delegation testing.
+                  <h3 className="text-lg font-semibold text-white">Cedra Labs</h3>
+                  <p className="text-xs text-zinc-400 leading-relaxed">
+                    Contributing to Move-based event indexing architecture and tooling through cedra-cli development.
                   </p>
-                </CardContent>
+                </div>
               </Card>
 
-              {/* Over Protocol */}
-              <Card className="border-zinc-800 bg-zinc-900 hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-950/50 transition-all duration-300 overflow-hidden">
-                <div className="relative h-[200px] bg-zinc-800/50">
-                  <Image 
-                    src="/images/overprotocol.png"
-                    alt="Over Protocol Validator"
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-                <CardContent className="p-6 space-y-4">
+              {/* Kept */}
+              <Card className="border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:shadow-lg hover:shadow-cyan-950/10 transition-all duration-300 p-5">
+                <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <Badge className="bg-blue-900/30 text-blue-300 border border-blue-700">
-                      <CheckCircle2 className="h-3 w-3 mr-1" />
-                      Completed
-                    </Badge>
-                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">Over Protocol</Badge>
+                    <Badge className="bg-blue-900/30 text-blue-300 border border-blue-700 text-xs">Base Ecosystem</Badge>
+                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700 text-xs">DeFi</Badge>
                   </div>
-                  <h3 className="text-xl font-bold text-white">
-                    Over Protocol Validator Node
-                  </h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed">
-                    Successfully completed Over Protocol validator node operations with stable uptime and active participation in testnet staking and governance.
+                  <h3 className="text-lg font-semibold text-white">Kept</h3>
+                  <p className="text-xs text-zinc-400 leading-relaxed">
+                    Accountability protocol where users stake tokens to back daily commitments, introducing financial incentives for habit building.
                   </p>
-                </CardContent>
-              </Card>
-
-              {/* Subsquid */}
-              <Card className="border-zinc-800 bg-zinc-900 hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-950/50 transition-all duration-300 overflow-hidden">
-                <div className="relative h-[200px] bg-zinc-800/50">
-                  <Image 
-                    src="/images/subsquid.png"
-                    alt="Subsquid Validator"
-                    fill
-                    className="object-cover object-center"
-                  />
                 </div>
-                <CardContent className="p-6 space-y-4">
-                  <div className="flex items-center gap-2">
-                    <Badge className="bg-blue-900/30 text-blue-300 border border-blue-700">
-                      <CheckCircle2 className="h-3 w-3 mr-1" />
-                      Completed
-                    </Badge>
-                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">Subsquid</Badge>
-                  </div>
-                  <h3 className="text-xl font-bold text-white">
-                    Subsquid Multi-Validator Setup
-                  </h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed">
-                    Successfully completed multiple Subsquid validator identities operations, simulated high-load scenarios and validated indexer reliability in testnet conditions.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* BonusBlock */}
-              <Card className="border-zinc-800 bg-zinc-900 hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-950/50 transition-all duration-300 overflow-hidden">
-                <div className="relative h-[200px] bg-zinc-800/50">
-                  <Image 
-                    src="/images/bonusblock.png"
-                    alt="BonusBlock Validator - NodeDerana"
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-                <CardContent className="p-6 space-y-4">
-                  <div className="flex items-center gap-2">
-                    <Badge className="bg-blue-900/30 text-blue-300 border border-blue-700">
-                      <CheckCircle2 className="h-3 w-3 mr-1" />
-                      Completed
-                    </Badge>
-                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">BonusBlock</Badge>
-                  </div>
-                  <h3 className="text-xl font-bold text-white">
-                    BonusBlock Validator - NodeDerana
-                  </h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed">
-                    Successfully completed testnet operations as NodeDerana validator on BonusBlock network, contributed to network security and validator operations.
-                  </p>
-                </CardContent>
               </Card>
             </div>
           </div>
           </ScrollFade>
           
-          {/* Additional Networks */}
-          <ScrollFade delay={300}>
-          <div className="space-y-8">
-            <div className="flex items-center gap-3">
-              <Shield className="h-6 w-6 text-white" />
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Additional Networks
-              </h2>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Nibiru Chain */}
-              <Card className="border-zinc-800 bg-zinc-900 hover:border-blue-900/50 hover:shadow-xl hover:shadow-blue-950/30 transition-all duration-300">
-                <CardContent className="p-6 space-y-4">
-                  <div className="flex items-center gap-2">
-                    <Badge className="bg-blue-900/30 text-blue-300 border border-blue-700">
-                      <CheckCircle2 className="h-3 w-3 mr-1" />
-                      Completed
-                    </Badge>
-                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">Cosmos SDK</Badge>
-                  </div>
-                  <h3 className="text-xl font-bold text-white">
-                    Nibiru Chain Validator
-                  </h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed">
-                    Operated PoS validator node on Nibiru testnet for 7 months. Deployed test website for smart contract staking simulations and user onboarding.
-                  </p>
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    <span className="text-xs text-zinc-500">Nibiru</span>
-                    <span className="text-xs text-zinc-600">•</span>
-                    <span className="text-xs text-zinc-500">Validator</span>
-                    <span className="text-xs text-zinc-600">•</span>
-                    <span className="text-xs text-zinc-500">Staking</span>
-                  </div>
-                </CardContent>
-              </Card>
-              
-
-              {/* 30+ Networks */}
-              <Card className="border-zinc-800 bg-zinc-900 hover:border-blue-900/50 hover:shadow-xl hover:shadow-blue-950/30 transition-all duration-300">
-                <CardContent className="p-6 space-y-4">
-                  <div className="flex items-center gap-2">
-                    <Badge className="bg-blue-900/30 text-blue-300 border border-blue-700">
-                      <CheckCircle2 className="h-3 w-3 mr-1" />
-                      Completed
-                    </Badge>
-                    <Badge className="bg-zinc-800 text-zinc-300 border border-zinc-700">Multi-Network</Badge>
-                  </div>
-                  <h3 className="text-xl font-bold text-white">
-                    30+ Network Infrastructure
-                  </h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed">
-                    Successfully completed infrastructure operations across 30+ blockchain networks including Namada, Initia, 0gLabs, Taiko, Sui, Elixir, and more. Roles included validator, indexer, oracle, and prover. Currently active: Aztec network.
-                  </p>
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    <span className="text-xs text-zinc-500">Docker</span>
-                    <span className="text-xs text-zinc-600">•</span>
-                    <span className="text-xs text-zinc-500">Monitoring</span>
-                    <span className="text-xs text-zinc-600">•</span>
-                    <span className="text-xs text-zinc-500">DevOps</span>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-          </ScrollFade>
-
           {/* CTA */}
           <ScrollFade delay={100}>
-          <div className="border-t border-zinc-800/30 pt-12 mt-12 text-center">
-            <h3 className="text-2xl font-bold mb-4">Want to see more?</h3>
-            <p className="text-zinc-400 mb-6">
-              Check out my GitHub for additional projects and open-source contributions
+          <div className="border-t border-zinc-800/40 pt-12 mt-12 text-center space-y-4">
+            <h3 className="text-xl font-semibold text-white">Ready to build working products?</h3>
+            <p className="text-zinc-400">
+              Let&apos;s discuss your next Web3 project — from smart contracts to complete deployment with practical development approach
             </p>
-            <Link href="https://github.com/deranalabs" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="gap-2">
-                <Github className="h-4 w-4" />
-                Visit GitHub Profile
-              </Button>
-            </Link>
+            <div className="flex gap-4 justify-center">
+              <Link href="https://github.com/deranalabs" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="gap-2">
+                  <Github className="h-4 w-4" />
+                  GitHub
+                </Button>
+              </Link>
+              <Link href="mailto:deranalabs@proton.me">
+                <Button className="gap-2 bg-cyan-600 hover:bg-cyan-500">
+                  Get in Touch
+                </Button>
+              </Link>
+            </div>
           </div>
           </ScrollFade>
         </div>
