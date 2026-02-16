@@ -24,14 +24,15 @@ export default function HomePage() {
       {/* Hero Section */}
       <ScrollFade>
       <section className="container mx-auto max-w-5xl px-4 md:px-6 py-12 sm:py-16 md:py-24">
-        <div className="space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="space-y-8 order-1 lg:order-1">
-            <div className="inline-flex items-center gap-2 bg-zinc-900/80 text-zinc-100 px-4 py-2 rounded-full text-sm font-medium border border-zinc-800 shadow-lg shadow-black/50">
+        <div className="space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[600px]">
+          <div className="space-y-8 order-1 lg:order-1 flex flex-col justify-center">
+            <div className="inline-flex items-center gap-2 bg-zinc-900/80 text-zinc-100 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium border border-zinc-800 shadow-lg shadow-black/50">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
               </span>
-              Available for new projects
+              <span className="hidden sm:inline">Available for new projects</span>
+              <span className="sm:hidden">Open for projects</span>
             </div>
             
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
@@ -42,8 +43,8 @@ export default function HomePage() {
               &{' '}Working Solutions
             </h1>
             
-            <p className="text-base sm:text-lg md:text-xl text-zinc-400 leading-relaxed">
-              Hi, I{'&apos;'}m <span className="font-semibold text-white">Bayu Mulyana</span> — a Web3 Product Developer who builds end-to-end solutions with intuitive problem-solving. I focus on delivering working products from concept to deployment across Web2 and Web3 ecosystems.
+            <p className="text-sm sm:text-base md:text-lg md:text-xl text-zinc-400 leading-relaxed">
+              Hi, I&apos;m <span className="font-semibold text-white">Bayu Mulyana</span> a Web3 Product Developer who builds end-to-end solutions with intuitive problem-solving. I focus on delivering working products from concept to deployment across Web2 and Web3 ecosystems.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -56,35 +57,35 @@ export default function HomePage() {
             </div>
 
             {/* Stats */}
-            <div className="flex sm:grid gap-4 sm:gap-6 sm:grid-cols-4 overflow-x-auto pb-2 sm:pb-0 pt-8 border-t border-zinc-800/50">
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-6 pt-8 border-t border-zinc-800/50">
               <div>
-                <div className="text-3xl font-bold text-white">4+</div>
-                <div className="text-sm text-zinc-400">Years Experience</div>
+                <div className="text-2xl sm:text-3xl font-bold text-white">4+</div>
+                <div className="text-xs sm:text-sm text-zinc-400">Years Experience</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white">3</div>
-                <div className="text-sm text-zinc-400">Ecosystems</div>
+                <div className="text-2xl sm:text-3xl font-bold text-white">3</div>
+                <div className="text-xs sm:text-sm text-zinc-400">Ecosystems</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white">15+</div>
-                <div className="text-sm text-zinc-400">Projects Delivered</div>
+                <div className="text-2xl sm:text-3xl font-bold text-white">15+</div>
+                <div className="text-xs sm:text-sm text-zinc-400">Projects Delivered</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white">50+</div>
-                <div className="text-sm text-zinc-400">GitHub Commits</div>
+                <div className="text-2xl sm:text-3xl font-bold text-white">50+</div>
+                <div className="text-xs sm:text-sm text-zinc-400">GitHub Commits</div>
               </div>
             </div>
           </div>
 
           {/* Visual Element with Animation */}
           <div className="relative flex items-center justify-center order-2 lg:order-2">
-            <div className="w-full max-w-[280px] sm:max-w-xs lg:max-w-md aspect-square rounded-2xl bg-zinc-900 p-1 border border-zinc-800">
+            <div className="w-full max-w-[280px] sm:max-w-xs md:max-w-sm lg:max-w-md aspect-square rounded-2xl bg-zinc-900 p-1 border border-zinc-800">
               <div className="w-full h-full rounded-2xl bg-black flex items-center justify-center relative overflow-hidden">
                 {/* Animated Background */}
                 <div className="absolute inset-0">
                   {/* Orbital Rings */}
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 sm:w-64 sm:h-64 rounded-full border border-cyan-500/20 animate-spin-slow"></div>
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 sm:w-48 sm:h-48 rounded-full border border-cyan-400/30 animate-spin-reverse"></div>
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full border border-cyan-500/20 animate-spin-slow"></div>
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full border border-cyan-400/30 animate-spin-reverse"></div>
                   
                   {/* Floating Particles - Desktop Only */}
                   <div className="hidden sm:block absolute top-1/4 left-1/4 w-2 h-2 bg-cyan-400 rounded-full animate-float-1 shadow-lg shadow-cyan-400/50"></div>
@@ -94,16 +95,16 @@ export default function HomePage() {
                   <div className="hidden sm:block absolute bottom-1/4 right-1/4 w-1.5 h-1.5 bg-cyan-500 rounded-full animate-float-5 shadow-lg shadow-cyan-500/50"></div>
                   
                   {/* Glow Effect */}
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 sm:w-32 sm:h-32 bg-cyan-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 bg-cyan-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
                 </div>
 
                 {/* Content */}
-                <div className="relative z-10 text-center space-y-4 lg:space-y-6 p-6 lg:p-12">
+                <div className="relative z-10 text-center space-y-3 sm:space-y-4 lg:space-y-6 p-4 sm:p-6 lg:p-8">
                   {/* Profile Photo with Glow */}
                   <div className="relative inline-block">
                     <div className="absolute inset-0 bg-cyan-500/30 rounded-full blur-xl animate-pulse-slow"></div>
                     <div className="relative p-1 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border border-cyan-500/30">
-                      <div className="rounded-full overflow-hidden w-24 h-24 lg:w-32 lg:h-32 bg-zinc-800">
+                      <div className="rounded-full overflow-hidden w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 bg-zinc-800">
                         <Image 
                           src="/images/bayuprofile.png"
                           alt="Bayu Mulyana"
@@ -121,13 +122,13 @@ export default function HomePage() {
                     <div className="text-sm lg:text-base text-zinc-400">End-to-End Solutions • Practical Approach</div>
                   </div>
                   {/* Tech Stack Badges Inside */}
-                  <div className="flex flex-wrap justify-center gap-1.5 lg:gap-2 pt-2 lg:pt-4">
-                    <span className="bg-zinc-800/80 backdrop-blur-sm text-zinc-300 px-2 lg:px-3 py-0.5 lg:py-1 rounded-full text-[10px] lg:text-xs font-medium border border-zinc-700/50 hover:border-cyan-500/50 transition-all">Solidity</span>
-                    <span className="bg-zinc-800/80 backdrop-blur-sm text-zinc-300 px-2 lg:px-3 py-0.5 lg:py-1 rounded-full text-[10px] lg:text-xs font-medium border border-zinc-700/50 hover:border-cyan-500/50 transition-all">Move</span>
-                    <span className="bg-zinc-800/80 backdrop-blur-sm text-zinc-300 px-2 lg:px-3 py-0.5 lg:py-1 rounded-full text-[10px] lg:text-xs font-medium border border-zinc-700/50 hover:border-cyan-500/50 transition-all">Node.js</span>
-                    <span className="bg-zinc-800/80 backdrop-blur-sm text-zinc-300 px-2 lg:px-3 py-0.5 lg:py-1 rounded-full text-[10px] lg:text-xs font-medium border border-zinc-700/50 hover:border-cyan-500/50 transition-all">PostgreSQL</span>
-                    <span className="bg-zinc-800/80 backdrop-blur-sm text-zinc-300 px-2 lg:px-3 py-0.5 lg:py-1 rounded-full text-[10px] lg:text-xs font-medium border border-zinc-700/50 hover:border-cyan-500/50 transition-all">Next.js</span>
-                    <span className="bg-zinc-800/80 backdrop-blur-sm text-zinc-300 px-2 lg:px-3 py-0.5 lg:py-1 rounded-full text-[10px] lg:text-xs font-medium border border-zinc-700/50 hover:border-cyan-500/50 transition-all">Wagmi</span>
+                  <div className="flex flex-wrap justify-center gap-1 sm:gap-1.5 lg:gap-2 pt-2 lg:pt-4 max-w-full">
+                    <span className="bg-zinc-800/80 backdrop-blur-sm text-zinc-300 px-1.5 sm:px-2 lg:px-3 py-0.5 lg:py-1 rounded-full text-[9px] sm:text-[10px] lg:text-xs font-medium border border-zinc-700/50 hover:border-cyan-500/50 transition-all whitespace-nowrap">Solidity</span>
+                    <span className="bg-zinc-800/80 backdrop-blur-sm text-zinc-300 px-1.5 sm:px-2 lg:px-3 py-0.5 lg:py-1 rounded-full text-[9px] sm:text-[10px] lg:text-xs font-medium border border-zinc-700/50 hover:border-cyan-500/50 transition-all whitespace-nowrap">Move</span>
+                    <span className="bg-zinc-800/80 backdrop-blur-sm text-zinc-300 px-1.5 sm:px-2 lg:px-3 py-0.5 lg:py-1 rounded-full text-[9px] sm:text-[10px] lg:text-xs font-medium border border-zinc-700/50 hover:border-cyan-500/50 transition-all whitespace-nowrap">Node.js</span>
+                    <span className="bg-zinc-800/80 backdrop-blur-sm text-zinc-300 px-1.5 sm:px-2 lg:px-3 py-0.5 lg:py-1 rounded-full text-[9px] sm:text-[10px] lg:text-xs font-medium border border-zinc-700/50 hover:border-cyan-500/50 transition-all whitespace-nowrap">PostgreSQL</span>
+                    <span className="bg-zinc-800/80 backdrop-blur-sm text-zinc-300 px-1.5 sm:px-2 lg:px-3 py-0.5 lg:py-1 rounded-full text-[9px] sm:text-[10px] lg:text-xs font-medium border border-zinc-700/50 hover:border-cyan-500/50 transition-all whitespace-nowrap">Next.js</span>
+                    <span className="bg-zinc-800/80 backdrop-blur-sm text-zinc-300 px-1.5 sm:px-2 lg:px-3 py-0.5 lg:py-1 rounded-full text-[9px] sm:text-[10px] lg:text-xs font-medium border border-zinc-700/50 hover:border-cyan-500/50 transition-all whitespace-nowrap">Wagmi</span>
                   </div>
                 </div>
               </div>
@@ -141,15 +142,16 @@ export default function HomePage() {
       <ScrollFade delay={100}>
       <section className="border-t border-zinc-800/30 py-16 md:py-24">
         <div className="container mx-auto max-w-5xl px-4 md:px-6">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8 md:mb-12">
+            <div className="text-center md:text-left">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-2 md:mb-4">
                 Recent Projects
               </h2>
-              <p className="text-lg text-zinc-400">Featured DApps and infrastructure work</p>
+              <p className="text-base md:text-lg text-zinc-400">Featured DApps and infrastructure work</p>
             </div>
-            <Link href="/projects" className="text-zinc-400 hover:text-white font-medium flex items-center gap-2 shrink-0">
-              View all projects
+            <Link href="/projects" className="text-zinc-400 hover:text-white font-medium flex items-center gap-2 shrink-0 justify-center md:justify-start">
+              <span className="hidden sm:inline">View all projects</span>
+              <span className="sm:hidden">All projects</span>
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -175,7 +177,7 @@ export default function HomePage() {
                 <CardContent className="p-8 flex flex-col justify-center space-y-4">
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="text-xs font-medium px-2 py-1 bg-green-900/30 text-green-300 rounded border border-green-700/50">Live</span>
-                    <span className="text-xs font-medium px-2 py-1 bg-zinc-800 text-zinc-300 rounded border border-zinc-700">Sui</span>
+                    <span className="text-xs font-medium px-2 py-1 bg-zinc-800 text-zinc-300 rounded border border-zinc-700">Sui Testnet</span>
                     <span className="text-xs font-medium px-2 py-1 bg-zinc-800 text-zinc-300 rounded border border-zinc-700">Move</span>
                   </div>
                   <h3 className="text-3xl font-bold text-white group-hover:text-gray-300 transition-colors">
@@ -205,10 +207,10 @@ export default function HomePage() {
           </div>
 
           {/* Additional Featured Projects - Grid */}
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
             {/* Irys Proofboard */}
             <Card className="group border-zinc-800 bg-zinc-900 hover:border-cyan-900/50 hover:shadow-lg hover:shadow-cyan-950/30 transition-all duration-300 overflow-hidden">
-              <div className="relative aspect-video overflow-hidden bg-zinc-800/50">
+              <div className="relative aspect-[16/10] sm:aspect-video overflow-hidden bg-zinc-800/50">
                 <video 
                   src="/images/projects/proofboard.mp4"
                   autoPlay
@@ -217,19 +219,19 @@ export default function HomePage() {
                   playsInline
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute top-4 right-4">
-                  <span className="text-xs font-medium px-2 py-1 bg-green-900/30 text-green-300 rounded border border-green-700/50">Live</span>
+                <div className="absolute top-2 sm:top-4 right-2 sm:right-4">
+                  <span className="text-[10px] sm:text-xs font-medium px-1.5 sm:px-2 py-0.5 sm:py-1 bg-green-900/30 text-green-300 rounded border border-green-700/50">Live</span>
                 </div>
               </div>
-              <CardContent className="p-6 space-y-4">
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="text-xs font-medium px-2 py-1 bg-zinc-800 text-zinc-300 rounded border border-zinc-700">Irys Testnet</span>
-                  <span className="text-xs font-medium px-2 py-1 bg-zinc-800 text-zinc-300 rounded border border-zinc-700">React</span>
+              <CardContent className="p-4 sm:p-6 space-y-3 sm:space-y-4">
+                <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                  <span className="text-[10px] sm:text-xs font-medium px-1.5 sm:px-2 py-0.5 sm:py-1 bg-zinc-800 text-zinc-300 rounded border border-zinc-700">Irys Testnet</span>
+                  <span className="text-[10px] sm:text-xs font-medium px-1.5 sm:px-2 py-0.5 sm:py-1 bg-zinc-800 text-zinc-300 rounded border border-zinc-700">React</span>
                 </div>
-                <h3 className="text-xl font-bold text-white group-hover:text-gray-300 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-gray-300 transition-colors">
                   Irys Proofboard
                 </h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">
+                <p className="text-zinc-400 text-[13px] sm:text-sm leading-relaxed">
                   Decentralized Proof-of-Existence platform using Irys SDK & SHA-256 hashing with gamified user achievements and permanent storage.
                 </p>
                 <div className="flex gap-3 pt-2">
@@ -282,40 +284,40 @@ export default function HomePage() {
       <ScrollFade delay={200}>
       <section className="py-16 md:py-24 border-t border-zinc-800/30">
         <div className="container mx-auto max-w-5xl px-4 md:px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-3 md:mb-4">
               Expertise
             </h2>
-            <p className="text-lg text-zinc-400">Practical Product Development & End-to-End Solutions</p>
+            <p className="text-base md:text-lg text-zinc-400">Practical Product Development & End-to-End Solutions</p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            <div className="text-center space-y-4">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-zinc-900 to-cyan-950/30 flex items-center justify-center mx-auto border border-zinc-800 shadow-lg shadow-cyan-950/30">
-                <Code className="h-6 w-6 text-zinc-400" />
+          <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+            <div className="text-center space-y-3 md:space-y-4">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-lg bg-gradient-to-br from-zinc-900 to-cyan-950/30 flex items-center justify-center mx-auto border border-zinc-800 shadow-lg shadow-cyan-950/30">
+                <Code className="h-7 w-7 sm:h-8 sm:w-8 text-zinc-400" />
               </div>
-              <h3 className="text-xl font-semibold text-white">Smart Contracts</h3>
-              <p className="text-zinc-400 leading-relaxed text-[15px]">
+              <h3 className="text-lg sm:text-xl font-semibold text-white">Smart Contracts</h3>
+              <p className="text-zinc-400 leading-relaxed text-[13px] sm:text-[15px]">
                 Building secure smart contracts with practical testing approach. Focus on working solutions rather than theoretical perfection, with proper security audits.
               </p>
             </div>
 
-            <div className="text-center space-y-4">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-zinc-900 to-cyan-950/30 flex items-center justify-center mx-auto border border-zinc-800 shadow-lg shadow-cyan-950/30">
-                <Wallet className="h-6 w-6 text-zinc-400" />
+            <div className="text-center space-y-3 md:space-y-4">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-lg bg-gradient-to-br from-zinc-900 to-cyan-950/30 flex items-center justify-center mx-auto border border-zinc-800 shadow-lg shadow-cyan-950/30">
+                <Wallet className="h-7 w-7 sm:h-8 sm:w-8 text-zinc-400" />
               </div>
-              <h3 className="text-xl font-semibold text-white">Backend Systems</h3>
-              <p className="text-zinc-400 leading-relaxed text-[15px]">
+              <h3 className="text-lg sm:text-xl font-semibold text-white">Backend Systems</h3>
+              <p className="text-zinc-400 leading-relaxed text-[13px] sm:text-[15px]">
                 Designing APIs, databases, and server architecture with PostgreSQL and Node.js. Building robust backend systems that power Web2 and Web3 applications.
               </p>
             </div>
 
-            <div className="text-center space-y-4">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-zinc-900 to-cyan-950/30 flex items-center justify-center mx-auto border border-zinc-800 shadow-lg shadow-cyan-950/30">
-                <ImageIcon className="h-6 w-6 text-zinc-400" />
+            <div className="text-center space-y-3 md:space-y-4">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-lg bg-gradient-to-br from-zinc-900 to-cyan-950/30 flex items-center justify-center mx-auto border border-zinc-800 shadow-lg shadow-cyan-950/30">
+                <ImageIcon className="h-7 w-7 sm:h-8 sm:w-8 text-zinc-400" />
               </div>
-              <h3 className="text-xl font-semibold text-white">Product Integration</h3>
-              <p className="text-zinc-400 leading-relaxed text-[15px]">
+              <h3 className="text-lg sm:text-xl font-semibold text-white">Product Integration</h3>
+              <p className="text-zinc-400 leading-relaxed text-[13px] sm:text-[15px]">
                 Connecting all pieces together with intuitive problem-solving. From smart contracts to user interfaces, I focus on delivering complete working products.
               </p>
             </div>
@@ -328,16 +330,16 @@ export default function HomePage() {
       <ScrollFade delay={300}>
       <section className="py-16 md:py-24 border-t border-zinc-800/30">
         <div className="container mx-auto max-w-5xl px-4 md:px-6">
-          <div className="text-center space-y-8">
-            <div className="space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <div className="text-center space-y-6 md:space-y-8">
+            <div className="space-y-3 md:space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
                 Ready to build working products?
               </h2>
-              <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
-                Let{'&apos;'}s discuss your project requirements and build practical solutions together. I focus on delivering working products from concept to deployment.
+              <p className="text-base md:text-lg text-zinc-400 max-w-2xl mx-auto px-4">
+                Let&apos;s discuss your project requirements and build practical solutions together. I focus on delivering working products from concept to deployment.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
               <Link href="/contact">
                 <Button size="lg" className="h-12 px-8">Start a Project</Button>
               </Link>

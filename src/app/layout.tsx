@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   title: 'Bayu Mulyana - Web3 Product Developer',
   description: 'Web3 Product Developer specializing in end-to-end Web3 solutions. Building complete products from smart contracts to user interfaces across EVM, MoveVM, and Solana ecosystems. Based in Bogor, Indonesia.',
   keywords: ['Web3', 'Product Developer', 'Smart Contracts', 'DApp Development', 'Solidity', 'Move', 'Next.js', 'Blockchain', 'Web3 Engineer', 'Bayu Mulyana'],
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
 };
 
 export default function RootLayout({

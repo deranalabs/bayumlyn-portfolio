@@ -101,9 +101,9 @@ export default function AboutPage() {
       <div className="container mx-auto max-w-5xl px-4 md:px-6 py-16 md:py-24">
         <div className="space-y-16">
           <ScrollFade>
-          <div className="grid lg:grid-cols-[260px_1fr] gap-10 items-start">
+          <div className="grid lg:grid-cols-[260px_1fr] gap-8 lg:gap-10 items-start">
             <div className="flex justify-center lg:justify-start">
-              <div className="relative w-64 h-64 lg:w-full lg:h-auto lg:aspect-square">
+              <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-full lg:h-auto lg:aspect-square">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
                 <div className="relative rounded-full overflow-hidden border-4 border-zinc-800 shadow-2xl shadow-cyan-950/40">
                   <Image
@@ -118,12 +118,12 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="space-y-6">
-              <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">About</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-                Hi, I{'&apos;'}m Bayu Mulyana
+            <div className="space-y-4 md:space-y-6">
+              <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-cyan-300">About</p>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
+                Hi, I&apos;m Bayu Mulyana
               </h1>
-              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed max-w-3xl">
+              <p className="text-base md:text-lg md:text-xl text-zinc-300 leading-relaxed max-w-3xl">
               Web3 Product Developer who builds end-to-end solutions with intuitive problem-solving approach. I focus on delivering working products from concept to deployment across Web2 and Web3 ecosystems, using practical development methods rather than theoretical perfection.
             </p>
               <p className="text-zinc-400 leading-relaxed max-w-3xl">
@@ -138,11 +138,11 @@ export default function AboutPage() {
           </ScrollFade>
 
           <ScrollFade delay={100}>
-          <div className="border-t border-zinc-800/40 pt-12 space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <div className="border-t border-zinc-800/40 pt-8 md:pt-12 space-y-6 md:space-y-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
               Tech stack
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               {techStacks.map((stack) => (
                 <div key={stack.title} className="space-y-3">
                   <h3 className="font-semibold text-white">{stack.title}</h3>
@@ -158,15 +158,15 @@ export default function AboutPage() {
           </ScrollFade>
 
           <ScrollFade delay={100}>
-          <div className="border-t border-zinc-800/40 pt-12 space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <div className="border-t border-zinc-800/40 pt-8 md:pt-12 space-y-6 md:space-y-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
               Skills
             </h2>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2 sm:gap-3">
               {skillTags.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full border border-zinc-700/80 bg-zinc-900/60 px-4 py-2 text-sm text-zinc-200"
+                  className="rounded-full border border-zinc-700/80 bg-zinc-900/60 px-2.5 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm text-zinc-200"
                 >
                   {skill}
                 </span>
@@ -176,11 +176,11 @@ export default function AboutPage() {
           </ScrollFade>
 
           <ScrollFade delay={100}>
-          <div className="border-t border-zinc-800/40 pt-12 space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <div className="border-t border-zinc-800/40 pt-8 md:pt-12 space-y-6 md:space-y-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
               Selected projects
             </h2>
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
               {selectedProjects.map((project) => (
                 <div
                   key={project.name}
@@ -195,8 +195,8 @@ export default function AboutPage() {
           </ScrollFade>
 
           <ScrollFade delay={100}>
-          <div className="border-t border-zinc-800/40 pt-12 space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <div className="border-t border-zinc-800/40 pt-8 md:pt-12 space-y-6 md:space-y-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
               Experience
             </h2>
             <Timeline items={experience} />

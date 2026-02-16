@@ -47,7 +47,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white p-2 hover:bg-zinc-800/50 rounded-lg transition-colors"
+            className="md:hidden text-white p-3 min-h-[44px] min-w-[44px] hover:bg-zinc-800/50 rounded-lg transition-colors flex items-center justify-center"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >

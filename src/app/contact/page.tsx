@@ -23,12 +23,12 @@ export default function ContactPage() {
         <div className="space-y-16">
           {/* Header */}
           <ScrollFade>
-          <div className="space-y-6">
-            <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">Contact</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-              Let{'&apos;'}s Connect
+          <div className="space-y-4 md:space-y-6">
+            <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-cyan-300">Contact</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
+              Let&apos;s Connect
             </h1>
-            <p className="text-lg md:text-xl text-zinc-400 max-w-3xl leading-relaxed">
+            <p className="text-base md:text-lg md:text-xl text-zinc-400 max-w-3xl leading-relaxed">
               Web3 Product Developer who builds complete solutions with practical approach. Reach out for collaborations, product development, or end-to-end Web3 projects from concept to deployment.
             </p>
           </div>
@@ -36,16 +36,16 @@ export default function ContactPage() {
 
           {/* Contact Links */}
           <ScrollFade delay={100}>
-          <div className="space-y-8">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="space-y-6 md:space-y-8">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
               <Link
                 href="mailto:bayumlynn@gmail.com"
-                className="flex items-center gap-3 p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
+                className="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
               >
-                <Mail className="h-5 w-5 text-zinc-400" />
+                <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-zinc-400" />
                 <div>
-                  <p className="font-medium">Email</p>
-                  <p className="text-sm text-zinc-400">bayumlynn@gmail.com</p>
+                  <p className="font-medium text-sm">Email</p>
+                  <p className="text-xs sm:text-sm text-zinc-400">bayumlynn@gmail.com</p>
                 </div>
               </Link>
 
@@ -53,12 +53,12 @@ export default function ContactPage() {
                 href="https://t.me/deranaz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
+                className="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
               >
-                <MessageSquare className="h-5 w-5 text-zinc-400" />
+                <MessageSquare className="h-4 w-4 sm:h-5 sm:w-5 text-zinc-400" />
                 <div>
-                  <p className="font-medium">Telegram</p>
-                  <p className="text-sm text-zinc-400">@deranaz</p>
+                  <p className="font-medium text-sm">Telegram</p>
+                  <p className="text-xs sm:text-sm text-zinc-400">@deranaz</p>
                 </div>
               </Link>
 
@@ -66,12 +66,12 @@ export default function ContactPage() {
                 href="https://x.com/bayumlynn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
+                className="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
               >
-                <Twitter className="h-5 w-5 text-zinc-400" />
+                <Twitter className="h-4 w-4 sm:h-5 sm:w-5 text-zinc-400" />
                 <div>
-                  <p className="font-medium">X</p>
-                  <p className="text-sm text-zinc-400">@bayumlynn</p>
+                  <p className="font-medium text-sm">X</p>
+                  <p className="text-xs sm:text-sm text-zinc-400">@bayumlynn</p>
                 </div>
               </Link>
 
@@ -79,12 +79,12 @@ export default function ContactPage() {
                 href="https://github.com/deranalabs"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
+                className="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
               >
-                <Github className="h-5 w-5 text-zinc-400" />
+                <Github className="h-4 w-4 sm:h-5 sm:w-5 text-zinc-400" />
                 <div>
-                  <p className="font-medium">GitHub</p>
-                  <p className="text-sm text-zinc-400">@deranalabs</p>
+                  <p className="font-medium text-sm">GitHub</p>
+                  <p className="text-xs sm:text-sm text-zinc-400">@deranalabs</p>
                 </div>
               </Link>
 
@@ -92,12 +92,12 @@ export default function ContactPage() {
                 href="https://www.linkedin.com/in/bayumlyn/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
+                className="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
               >
-                <Linkedin className="h-5 w-5 text-zinc-400" />
+                <Linkedin className="h-4 w-4 sm:h-5 sm:w-5 text-zinc-400" />
                 <div>
-                  <p className="font-medium">LinkedIn</p>
-                  <p className="text-sm text-zinc-400">bayumlyn</p>
+                  <p className="font-medium text-sm">LinkedIn</p>
+                  <p className="text-xs sm:text-sm text-zinc-400">bayumlyn</p>
                 </div>
               </Link>
 
@@ -105,12 +105,12 @@ export default function ContactPage() {
                 href="https://www.upwork.com/freelancers/bayum8"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
+                className="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
               >
-                <Briefcase className="h-5 w-5 text-zinc-400" />
+                <Briefcase className="h-4 w-4 sm:h-5 sm:w-5 text-zinc-400" />
                 <div>
-                  <p className="font-medium">Upwork</p>
-                  <p className="text-sm text-zinc-400">bayumlyn</p>
+                  <p className="font-medium text-sm">Upwork</p>
+                  <p className="text-xs sm:text-sm text-zinc-400">bayumlyn</p>
                 </div>
               </Link>
 
@@ -118,12 +118,12 @@ export default function ContactPage() {
                 href="https://link3.to/bayumlyn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
+                className="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
               >
-                <Globe className="h-5 w-5 text-zinc-400" />
+                <Globe className="h-4 w-4 sm:h-5 sm:w-5 text-zinc-400" />
                 <div>
-                  <p className="font-medium">Link3</p>
-                  <p className="text-sm text-zinc-400">bayumlyn</p>
+                  <p className="font-medium text-sm">Link3</p>
+                  <p className="text-xs sm:text-sm text-zinc-400">bayumlyn</p>
                 </div>
               </Link>
 
@@ -131,12 +131,12 @@ export default function ContactPage() {
                 href="https://farcaster.xyz/derana"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
+                className="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
               >
-                <Users className="h-5 w-5 text-zinc-400" />
+                <Users className="h-4 w-4 sm:h-5 sm:w-5 text-zinc-400" />
                 <div>
-                  <p className="font-medium">Farcaster</p>
-                  <p className="text-sm text-zinc-400">Derana</p>
+                  <p className="font-medium text-sm">Farcaster</p>
+                  <p className="text-xs sm:text-sm text-zinc-400">Derana</p>
                 </div>
               </Link>
 
@@ -144,18 +144,18 @@ export default function ContactPage() {
                 href="https://base.app/profile/0x30F71f18cDF315Ad2A0bE35E47FC20a523BCAf46"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
+                className="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/40 hover:border-cyan-900/40 hover:bg-cyan-950/10 transition-all group"
               >
-                <Users className="h-5 w-5 text-zinc-400" />
+                <Users className="h-4 w-4 sm:h-5 sm:w-5 text-zinc-400" />
                 <div>
-                  <p className="font-medium">BaseApp</p>
-                  <p className="text-sm text-zinc-400">Derana</p>
+                  <p className="font-medium text-sm">BaseApp</p>
+                  <p className="text-xs sm:text-sm text-zinc-400">Derana</p>
                 </div>
               </Link>
             </div>
 
-            <div className="border-t border-zinc-800/40 pt-8 space-y-6">
-              <div className="grid md:grid-cols-2 gap-8">
+            <div className="border-t border-zinc-800/40 pt-6 md:pt-8 space-y-4 md:space-y-6">
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">Based in</h3>
                   <p className="text-zinc-400">Bogor, Indonesia</p>
@@ -183,6 +183,14 @@ export default function ContactPage() {
                     <li className="flex items-start gap-2">
                       <span className="text-cyan-400 text-lg leading-none">•</span>
                       <span>Rapid prototyping & hackathon partnerships</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-cyan-400 text-lg leading-none">•</span>
+                      <span>Validator operations</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-cyan-400 text-lg leading-none">•</span>
+                      <span>Know Your Customer (KYC)</span>
                     </li>
                   </ul>
                 </div>
