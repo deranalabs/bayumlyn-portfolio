@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import { useAccount } from 'wagmi';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -57,10 +58,12 @@ export function IdentityCard() {
           <>
             {ensProfile?.avatar && (
               <div className="flex justify-center">
-                <img
+                <Image
                   src={ensProfile.avatar}
                   alt="ENS Avatar"
-                  className="h-24 w-24 rounded-full border-2 border-white"
+                  width={96}
+                  height={96}
+                  className="rounded-full border-2 border-white"
                 />
               </div>
             )}

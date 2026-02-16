@@ -1,9 +1,18 @@
 import type { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { ClientProviders } from './client-providers';
-import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
+
+const ClientProviders = dynamic(() => import('./client-providers').then(mod => ({ default: mod.ClientProviders })), {
+  ssr: false,
+  loading: () => <div className="min-h-screen" />,
+});
+
+const Header = dynamic(() => import('@/components/layout/header').then(mod => ({ default: mod.Header })), {
+  ssr: false,
+  loading: () => <div className="h-16" />,
+});
 
 const inter = Inter({ subsets: ['latin'] });
 

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { ConnectButton as RainbowConnectButton } from '@rainbow-me/rainbowkit';
 import { Button } from '@/components/ui/button';
 
@@ -70,10 +71,11 @@ export function ConnectButton() {
                         }}
                       >
                         {chain.iconUrl && (
-                          <img
+                          <Image
                             alt={chain.name ?? 'Chain icon'}
                             src={chain.iconUrl}
-                            style={{ width: 16, height: 16 }}
+                            width={16}
+                            height={16}
                           />
                         )}
                       </div>

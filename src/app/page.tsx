@@ -264,7 +264,7 @@ export default function HomePage() {
                   Sukatani
                 </h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">
-                  Web3 Farming RPG featuring tradable Land NFTs, on-chain inventory, and a "Play, Harvest, Own" economic loop on Base Sepolia.
+                  Web3 Farming RPG featuring tradable Land NFTs, on-chain inventory, and a {"\"Play, Harvest, Own\""} economic loop on Base Sepolia.
                 </p>
                 <div className="flex gap-3 pt-2">
                   <a href="https://sukatani.fun" target="_blank" rel="noopener noreferrer">

@@ -127,7 +127,7 @@ export default function AboutPage() {
               Web3 Product Developer who builds end-to-end solutions with intuitive problem-solving approach. I focus on delivering working products from concept to deployment across Web2 and Web3 ecosystems, using practical development methods rather than theoretical perfection.
             </p>
               <p className="text-zinc-400 leading-relaxed max-w-3xl">
-                🏆 <span className="text-white font-medium">2nd Place Winner at Sui Indonesia Hackathon 2025</span> – Built "Catalyst," a fully functional NFT Launchpad on MoveVM.
+                🏆 <span className="text-white font-medium">2nd Place Winner at Sui Indonesia Hackathon 2025</span> – Built {"\"Catalyst,\""} a fully functional NFT Launchpad on MoveVM.
               </p>
             </div>
           </div>
