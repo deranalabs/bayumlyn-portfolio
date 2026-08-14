@@ -29,6 +29,9 @@ NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_project_id
 
 Get Project ID from https://cloud.walletconnect.com/
 
+---
+*Workflow Demo PR: Verified via Hermes Agent workflow test.*
+
 ## License
 
 MIT License
